@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let id = document.getElementById("inputPutId").value
         let nameInput = document.getElementById("inputPutNombre");
         let lastNameInput = document.getElementById("inputPutApellido");
-        requestCRUD('GET', { id })
+        requestCRUD('PUT', { id })
             .then((response) => {
                 if (response) {
                     nameInput.value = response.name;
